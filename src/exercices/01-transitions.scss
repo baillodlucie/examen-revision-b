@@ -9,6 +9,7 @@
   cursor: pointer;
   transition: color 0.4s;
 }
+
 .button:hover {
   background-color: #a8dadc;
   color: #1d3557;
@@ -55,4 +56,5 @@ article:hover {
   font-weight: 600;
   line-height: 30px;
   transform: scale(1.1);
+  transition-duration: 0.5s;
 }

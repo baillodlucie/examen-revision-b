@@ -7,6 +7,20 @@
     border-radius: 5px;
     color: #003566;
     box-shadow: 0px 0px 4px 0px rgba(#003566, 0.25);
+    animation-name: shadow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes shadow {
+    from {
+      box-shadow: 0px 0px 4px 0px rgba(0, 53, 102, 0.25);
+    }
+
+    to {
+      box-shadow: 0px 0px 4px 6px rgba(0, 53, 102, 0.25);
+    }
   }
 
   .loader {
@@ -18,5 +32,20 @@
     background: #ffbe0b;
     border-radius: 50px;
     color: #fff;
+    animation-name: changeColor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #ffbe0b;
+  }
+  50% {
+    background-color: #ff006e;
+  }
+  100% {
+    background-color: #8338ec;
   }
 }
